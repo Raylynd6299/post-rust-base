@@ -2,7 +2,6 @@ use super::schema::posts;
 use serde::{ Serialize, Deserialize };
 use diesel::prelude::*;
 use diesel::pg::PgConnection;
-use actix_web::{ web, HttpResponse };
 
 #[derive(Queryable, Debug, Deserialize, Serialize)]
 pub struct PostSimple {
